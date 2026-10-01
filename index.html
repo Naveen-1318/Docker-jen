@@ -1,1 +1,83 @@
+-- Create Database
+CREATE DATABASE company_employee_db;
 
+-- Select Database
+USE company_employee_db;
+
+-- Create Employee Table
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    job_role VARCHAR(100),
+    salary DECIMAL(12,2),
+    location VARCHAR(100),
+    company_name VARCHAR(100)
+);
+
+-- Insert 50 Employee Profiles
+INSERT INTO employees
+(employee_id, employee_name, job_role, salary, location, company_name)
+VALUES
+
+(1001, 'Arjun Sharma', 'Senior Software Engineer', 1250000, 'Hyderabad', 'Microsoft'),
+(1002, 'Priya Reddy', 'Data Scientist', 1450000, 'Bangalore', 'Google'),
+(1003, 'Rahul Verma', 'Cloud Architect', 1800000, 'Pune', 'Amazon'),
+(1004, 'Sneha Patel', 'Senior Product Manager', 2200000, 'Mumbai', 'Adobe'),
+(1005, 'Vikram Singh', 'Engineering Manager', 2400000, 'Hyderabad', 'Microsoft'),
+
+(1006, 'Ananya Rao', 'AI/ML Engineer', 1650000, 'Bangalore', 'Google'),
+(1007, 'Karthik Kumar', 'Solutions Architect', 1900000, 'Chennai', 'Amazon'),
+(1008, 'Neha Kapoor', 'Senior Business Analyst', 1350000, 'Gurgaon', 'Deloitte'),
+(1009, 'Rohit Mehta', 'Technical Lead', 1550000, 'Pune', 'TCS'),
+(1010, 'Divya Iyer', 'Project Manager', 1750000, 'Chennai', 'Infosys'),
+
+(1011, 'Aditya Nair', 'Senior Software Engineer', 1300000, 'Bangalore', 'Wipro'),
+(1012, 'Meera Joshi', 'Data Engineer', 1400000, 'Hyderabad', 'Accenture'),
+(1013, 'Suresh Reddy', 'Cloud Engineer', 1500000, 'Hyderabad', 'Oracle'),
+(1014, 'Pooja Shah', 'Product Manager', 2000000, 'Mumbai', 'Flipkart'),
+(1015, 'Manish Gupta', 'Senior Consultant', 1800000, 'Delhi', 'Deloitte'),
+
+(1016, 'Kavya Menon', 'Cyber Security Engineer', 1600000, 'Bangalore', 'IBM'),
+(1017, 'Amit Malhotra', 'Software Architect', 2100000, 'Noida', 'HCLTech'),
+(1018, 'Swathi Reddy', 'Database Administrator', 1350000, 'Hyderabad', 'Oracle'),
+(1019, 'Nikhil Jain', 'DevOps Engineer', 1550000, 'Pune', 'Capgemini'),
+(1020, 'Ishita Das', 'UX Designer', 1200000, 'Bangalore', 'Adobe'),
+
+(1021, 'Varun Prasad', 'Senior Java Developer', 1450000, 'Chennai', 'Cognizant'),
+(1022, 'Ayesha Khan', 'HR Manager', 1400000, 'Mumbai', 'Accenture'),
+(1023, 'Rakesh Yadav', 'Technical Architect', 2000000, 'Hyderabad', 'Tech Mahindra'),
+(1024, 'Nandini Rao', 'Financial Analyst', 1250000, 'Bangalore', 'JP Morgan'),
+(1025, 'Sanjay Kumar', 'Engineering Manager', 2300000, 'Pune', 'Amazon'),
+
+(1026, 'Lakshmi Devi', 'Senior Data Analyst', 1300000, 'Hyderabad', 'Microsoft'),
+(1027, 'Abhishek Roy', 'Full Stack Developer', 1500000, 'Kolkata', 'TCS'),
+(1028, 'Riya Agarwal', 'Product Designer', 1350000, 'Gurgaon', 'Google'),
+(1029, 'Harish Babu', 'Network Architect', 1650000, 'Chennai', 'Cisco'),
+(1030, 'Tanvi Kulkarni', 'Software Development Manager', 2500000, 'Pune', 'Amazon'),
+
+(1031, 'Deepak Sharma', 'Senior Consultant', 1750000, 'Delhi', 'Infosys'),
+(1032, 'Shreya Gupta', 'Machine Learning Engineer', 1700000, 'Bangalore', 'Microsoft'),
+(1033, 'Ravi Teja', 'PL/SQL Developer', 1250000, 'Hyderabad', 'Oracle'),
+(1034, 'Komal Singh', 'Business Intelligence Analyst', 1400000, 'Noida', 'Deloitte'),
+(1035, 'Mohit Agarwal', 'Cloud Solutions Architect', 2200000, 'Mumbai', 'AWS'),
+
+(1036, 'Sakshi Patil', 'Senior Software Developer', 1550000, 'Pune', 'Wipro'),
+(1037, 'Ajay Reddy', 'IT Project Manager', 1850000, 'Hyderabad', 'HCLTech'),
+(1038, 'Bhavana Rao', 'Data Scientist', 1600000, 'Bangalore', 'IBM'),
+(1039, 'Vivek Sharma', 'DevOps Architect', 1950000, 'Chennai', 'Cognizant'),
+(1040, 'Madhuri Nair', 'Senior HR Manager', 1500000, 'Mumbai', 'Infosys'),
+
+(1041, 'Gautam Mehta', 'Principal Engineer', 2600000, 'Bangalore', 'Google'),
+(1042, 'Anjali Verma', 'Senior Product Manager', 2250000, 'Hyderabad', 'Microsoft'),
+(1043, 'Pranav Joshi', 'AI Research Engineer', 2300000, 'Bangalore', 'Amazon'),
+(1044, 'Swetha Kumar', 'Technology Consultant', 1700000, 'Pune', 'Accenture'),
+(1045, 'Naveen Reddy', 'Senior Database Engineer', 1650000, 'Hyderabad', 'Oracle'),
+
+(1046, 'Preethi Shah', 'Cyber Security Manager', 2100000, 'Mumbai', 'IBM'),
+(1047, 'Akash Singh', 'Senior Cloud Engineer', 1750000, 'Delhi', 'Cisco'),
+(1048, 'Harini Rao', 'Lead Data Scientist', 2400000, 'Bangalore', 'Adobe'),
+(1049, 'Yash Patel', 'Software Engineering Manager', 2450000, 'Pune', 'Flipkart'),
+(1050, 'Keerthi Reddy', 'Technical Program Manager', 2150000, 'Hyderabad', 'Microsoft');
+
+-- Display all employees
+SELECT * FROM employees;
